@@ -32,6 +32,8 @@ public class DriverUtils {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return  driver;
+           return  driver;
     }
+    
 }
 
