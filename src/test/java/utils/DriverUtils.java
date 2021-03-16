@@ -9,31 +9,35 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverUtils {
 
-    public static WebDriver getDriver(String browser){
+    public static WebDriver getDriver(String browser) {
         WebDriver driver;
-        switch (browser){
-            case"chrome":
+        switch (browser) {
+            case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
-            case"firefox":
+            case "firefox":
                 WebDriverManager.chromedriver().setup();
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
             case "ie":
                 WebDriverManager.chromedriver().setup();
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
             default:
                 WebDriverManager.chromedriver().setup();
-                driver=new ChromeDriver();
+                driver = new ChromeDriver();
                 break;
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        return  driver;
-           return  driver;
-    }
-    
-}
+        return driver;
 
+    }
+
+    public static void main(String[] args) {
+
+
+        System.out.println("soft assert");
+    }
+}
